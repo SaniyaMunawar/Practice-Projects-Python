@@ -1,7 +1,19 @@
 # Practice-Projects-Python
-Text Analysis
-You have been recruited by your friend, a linguistics enthusiast, to create a utility tool that can perform analysis on a given piece of text. Complete the class 'analysedText' with the following methods -
+Weather Data
+Your friend, a rising star in the field of meterology, has called on you to write a script to perform some analysis on weather station data. Given below is a file "resources/ex4.csv", which contains some precipiation data for the month of June. Each line in the file has the format - Date,Precipation (upto two decimal places). Note how the data is seperated using ','. The first row of the file contains headers and should be ignored.
 
-Constructor - Takes argument 'text',makes it lower case and removes all punctuation. Assume only the following punctuation is used - period (.), exclamation mark (!), comma (,) and question mark (?). Store the argument in "fmtText"
-freqAll - returns a dictionary of all unique words in the text along with the number of their occurences.
-freqOf - returns the frequency of the word passed in argument.
+Your task is to complete the getNAvg function that computes a simple moving average for N days for the precipiation data, where N is a parameter. Your function should return a list of moving averages for the given data.
+
+The formula for a k day moving average over a series -  𝑛0,𝑛1,𝑛2,𝑛3....𝑛𝑚 is:
+for i = k to m where 𝑀𝑖 is the moving average
+ 
+The skeleton code has been provided below. Edit only the required function.
+
+
+
+
+
+\begin{align}
+M_{i} = M_{i-1} + \frac{n_{i} - n_{i-k}}{k}, \text{for i = k to m }
+\\ \text{where $M_{i}$ is the moving average}
+\end{align}
